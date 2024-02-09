@@ -51,7 +51,7 @@ $row= mysqli_fetch_array($result);
 <div class="row justify-content-center" style="margin-left: 636px;">
     <div class="col-md-6">
         <button type="submit" class="btn btn-primary" name="submit">Update</button>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='index.php'" style="color: white;">Back</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='read.php'" style="color: white;">Back</button>
     </div>
     </div> <br>
 </form>

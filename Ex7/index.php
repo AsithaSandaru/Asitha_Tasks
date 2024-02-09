@@ -6,14 +6,14 @@ $title ="Create Data";
             <div class="tourPlan">
                 <div class="row">
                     <div class="col text-center">
-                    <h1>EXERCISE 4</h1>
+                    <h1>EXERCISE 7</h1>
                     </div>
                 </div>
                 <br>
 <center><h2>Input Your Information Below:</h2></center><br>
 <div class="row justify-content-center">
     <div class="col-md-5">
-<form name="form1" method="post" action="process.php">
+<form name="form1" method="post" action="">
     <div class="form-group">
         <div class="row">
             <div class="col">
@@ -48,6 +48,35 @@ $title ="Create Data";
     </div>
     </div>
 </form>
+
+<?php
+
+if (isset($_POST['submit'])) {
+    $fname = $_POST['fname'];     
+    $lname = $_POST['lname'];     
+    $city = $_POST['city'];      
+    $groupid = $_POST['groupid'];
+
+    
+    include 'db.php';
+
+    
+    $sql = "INSERT INTO studentsinfo (first_name, last_name, groupid, city)
+            VALUES ('$fname', '$lname', '$groupid','$city')";
+
+    
+    if ($conn->query($sql) === TRUE) {
+        
+        echo "<br><div class='alert alert-success text-center'>Your information is successfully saved</div>";
+    } else {
+        
+        echo "<div class='alert alert-danger'>Error updating record: " . $sql . "<br>" . $conn->error;
+    }
+
+    
+    $conn->close();
+}
+?>
 
 <?php 
     include '../footer.php'; 

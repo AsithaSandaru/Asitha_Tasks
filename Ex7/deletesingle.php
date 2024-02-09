@@ -39,7 +39,7 @@ $row= mysqli_fetch_array($result);
   <div class="row justify-content-center" style="margin-left: 642px;">
   <div class="col-md-6">
       <button type="submit" class="btn btn-danger" name="delete">Delete</button>
-      <button type="submit" class="btn btn-primary" name="back"><a href="index.php" style="color: white;">Back</a></button>
+      <button type="submit" class="btn btn-primary" name="back"><a href="read.php" style="color: white;">Back</a></button>
     </div>
   </div>
 </form>

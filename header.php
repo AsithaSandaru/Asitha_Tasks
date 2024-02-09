@@ -27,7 +27,13 @@
                         <li><a href="ex3.php">Exercise3</a></li>
                         <li><a href="ex4.php">Exercise4</a></li>
                         <li><a href="https://github.com/kcdissanayaka/PHPWebev/blob/main/README.md">Exercise5</a></li>
-
+                        <li><a href="">Exercise7 &#x25BE;</a>
+                        <ul class="dropdown">
+                        <li><a href="index.php">CREATE</a></li>
+                        <li><a href="read.php">RUD</a></li>
+                        </ul>
+                    
+                    </li>
                         <!--<li><a href="#booking">Book</a></li>
                         <li><a href="#plan">Packages</a></li>
                         <li><a href="#services">Services</a></li>
@@ -41,6 +47,13 @@
                         <li><a href="ex3.php">Exercise3</a></li>
                         <li><a href="ex4.php">Exercise4</a></li>
                         <li><a href="https://github.com/kcdissanayaka/PHPWebev/blob/main/README.md">Exercise5</a></li>
+                        <li><a href="">Exercise7 &#x25BE;</a>
+                        <ul class="dropdown">
+                        <li><a href="index.php">CREATE</a></li>
+                        <li><a href="read.php">RUD</a></li>
+                        </ul>
+                    
+                    </li>
                         <!-- <li class="hideOnMobile"><a href="#booking">Book</a></li>
                         <li class="hideOnMobile"><a href="#plan">Packages</a></li>
                         <li class="hideOnMobile"><a href="#services">Services</a></li>
@@ -85,3 +98,23 @@
             </div> 
             
         </section>
+
+        <style>
+    ul li ul.dropdown {
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        left: 472px; /* Position the dropdown to the right */
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+    /* Adjusting the position of the dropdown */
+    ul li ul.dropdown {
+        top: 50%; /* Adjust as needed */
+    }
+</style>
+
